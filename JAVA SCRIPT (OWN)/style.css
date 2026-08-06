@@ -1,0 +1,45 @@
+/*#heading{
+   color:pink;
+   background-color: red;
+}
+.heading{
+   color:pink;
+   background-color:black;
+}
+body{
+   background-color: aqua;
+}
+button{
+   background-color: blueviolet;
+   color: greenyellow;
+}*/
+/*#box {
+   height:200px;
+   width:100px;
+   border:1px solid red;
+   color: green;
+   background-color: yellow;
+   
+}*/
+/*.content{
+    color:red;
+}
+.newClass {
+   background-color:green;
+   
+}*/
+/*div {
+   height: 100px;
+   width: 100px;
+   background-color: blue;
+   color:brown;
+   border: 1px solid black;
+}*/
+.dark{
+   background-color: black;
+   color: beige;
+}
+.light{
+   background-color: azure;
+   color: black;
+}

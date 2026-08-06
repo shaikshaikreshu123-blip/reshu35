@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>forms</title>
+   <link rel="stylesheet" href="forms.css">
+</head>
+
+<body>
+   <fieldset>
+      <legend>REGISTRATION</legend>
+      <form name="regForm">
+         <table>
+            <!---FIRST NAME--->
+            <tr>
+               <td>
+                  <label>First Name</label>
+               </td>
+               <td>
+                  
+                  <input type="text" name="fname" placeholder="enter first name">
+               </td>
+               <td>
+                  <span>(***enter valid first name***)</span>
+               </td>
+            </tr>
+            <!---LAST NAME--->
+            <tr>
+               <td>
+                  <label>Last name</label>
+               </td>
+               <td>
+                  <input type="text" name="lname" placeholder="enter Last name">
+               </td>
+               <td>
+                  <span>(***enter valid last name***)</span>
+               </td>
+            </tr>
+            <!---PASSWORD--->
+            <tr>
+               <td>
+                  <label>Password</label>
+               </td>
+               <td>
+                  <input type="password" name="password" placeholder="enter password name">
+               </td>
+               <td>
+                  <span>(***enter valid password name***)</span>
+               </td>
+            </tr>
+            <!---COMFIRM PASSWORD--->
+            <tr>
+               <td>
+                  <label>Conf password</label>
+
+               </td>
+               <td>
+                  <input type="password" name="conf pass" placeholder="enter pass name">
+               </td>
+               <td>
+                  <span>(***enter valid conf password name***)</span>
+               </td>
+            </tr>
+            <!---E-MAIL-->
+            <tr>
+               <td>
+                  <label>E-mail</label>
+               </td>
+               <td>
+                  <input type="e-mail" name="e-mail" placeholder="enter e-mail name">
+               </td>
+               <td>
+                  <span>(***enter e-mail name***)</span>
+               </td>
+            </tr>
+            <!----GENDER-->
+            <tr>
+               <td>
+                  <label>Gender</label>
+               </td>
+               <td>
+                  <input type="radio" name="gender" value="male">MALE
+                  <input type="radio" name="gender" value="Female">FEMALE
+                  <input type="radio" name="gender" value="Others">OTHERS
+               </td>
+               <td>
+                  <span>(*** Select Gender***)</span>
+               </td>
+            </tr>
+            <!----LANGUAGES-->
+            <tr>
+               <td rowspan="2">
+                  <label>Laungages</label>
+               </td>
+               <td>
+                  <input type="checkbox" name="languages" value="C">C lang
+                  <input type="checkbox" name="languages" value="C++">C++ lang<br>
+               </td>
+               <td rowspan="2">
+                  <span>(*** Select language at least one ***)</span>
+               </td>
+            </tr> 
+            <tr>
+               <td>
+                  <input type="checkbox" name="languages" value="java">java lang
+                  <input type="checkbox" name="languages" value="python">python lang<br>
+               </td>
+            </tr>
+            <!---COUNTRY--->
+            <tr>
+               <td>
+                  <label>Country</label>
+               </td>
+               <td>
+                  <Select Name="FRIENDS NAME">
+                     <Option vaue="">FRIENDS NAME</Option>
+                     <Option vaue="Reshma">reshma</Option>
+                     <Option vaue="Saranya">saranya</Option>
+                     <Option vaue="Sirisha">sirisha</Option>
+                     <Option vaue="Bhavani">bhavani</Option>
+                     <Option vaue="Koshmitha">koshmitha</Option>
+                     <Option vaue="Pushvitha">pushvitha</Option>
+                     <Option vaue="Indu">indu</Option>
+                  </Select>
+               </td>
+               <td>
+                  <span>(*** Select country ***)</span>
+               </td>
+            </tr>
+            <!---DOB--->
+            <tr>
+               <td>
+                  <label>DOB</label>
+
+               </td>
+               <td>
+                  <input type="data" name="DOB">
+               </td>
+               <td>
+                  <span>(***enter valid DOB***)</span>
+               </td>
+            </tr>
+            <!----TIME-->
+            <tr>
+               <td>
+                  <label>PrefF Time</label>
+               </td>
+               <td>
+                  <input type="time" name="ptime">
+               </td>
+               <td>
+                  <span>****enter valid preftime***</span>
+               </td>
+            </tr>
+            <!----COLOR-->
+            <tr>
+               <td>
+                  <label> Fav Color</label>
+               </td>
+               <td>
+                  <input type="color" name="FavColor">
+               </td>
+               <td>
+                  <span>****choose fav color***</span>
+               </td>
+            </tr>
+            <!----UPPLOAD FILE-->
+            <tr>
+               <td>
+                  <label> Resume</label>
+               </td>
+               <td>
+                  <input type="File" name="Resume">
+               </td>
+               <td>
+                  <span>****enter pdf format***</span>
+               </td>
+            </tr>
+            <!---ENTER ADDRESS-->
+            <tr>
+               <td>
+                  <label>Enter Address</label>
+               </td>
+               <td>
+                  <textarea name="rows" cols="" rows=""></textarea>
+               </td>
+               <td>
+                  <span>****enter valid address***</span>
+               </td>
+            </tr>
+
+            <!---SUBMIT & RESET--->
+            <tr>
+               <td>
+                  <input type="submit" name="Register">
+               </td>
+               <td>
+                  <input type="Reset" name="Clear">
+               </td>
+               <td></td>
+            </tr>
+         </table>
+      </form>
+   </fieldset>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>RWD</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+      <style>
+          *{
+            margin :0;
+            padding :0;
+            box-sizing: border-box;
+          }
+          .parent{
+            height:15%;
+            
+          }
+          .header{
+            height:15%;
+            display:flex;
+            justify-content: space-between;
+            align-items:center;
+          }
+          .header>img{
+                    width:10vw;
+          }
+          .menu{
+            display:flex;
+            gap:20%;
+            margin-right: 20px;
+      
+          }
+          .menu>a{
+            text-decoration: none;
+            font-size: 20px;
+            color:black;
+
+          }
+          .menu>a:hover{
+            color:blueviolet;
+
+          }
+          @media(max-width:556px){
+            .menu{
+               display:none;
+            
+         }
+            .header{
+                 justify-content: center;
+            }
+            .header>img{
+               width:20vw;
+            }
+         }
+          
+          
+      </style>
+   </head>
+   <body>
+      <div class="parent">
+         <div class="header">
+            <img src="flower1.jpg" alt="flower1">
+            <div class="menu">
+               <a href="#">Home</a>
+              <a href="#">About</a>
+               <a href="#">Contact</a>
+               <a href="#">Login</a>
+
+               <div class="main">
+                <div class="dell">
+                    <img src="dell.jpg" alt="dell">
+                    <p>Dell</p>
+                    <p>Qty : 10</p>
+                    <p><i class="fa fa-inr"></i>1000</p>
+                    <p>India</p>
+                </div>
+
+               <div class="footer">
+                <a href="#"><i class="fa fa-home"></i>Facebook</a>
+                    <a href="#"><i class="fa fa-info"></i>Twitter</a>
+                    <a href="#"><i class="fa fa-envelope"></i>Google</a>
+                    <a href="#"><i class="fa fa-sign-in"></i>Instagram</a>
+            </div>
+
+
+            </div>
+         </div>
+      </div>
+
+
+   </body>
+</html>

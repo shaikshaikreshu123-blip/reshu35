@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.parent{
+    height: 100vh;
+}
+.header{
+    height: 15%;
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header>img{
+    width: 10vw;
+}
+.menu{
+    margin-right: 20px;
+    display: flex;
+    gap: 20px;
+}
+.menu>a{
+    font-size: 20px;
+    text-decoration: none;
+}
+.menu>a:hover{
+    color: red;
+}
+.main{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.flower{
+    border: 1px solid red;
+    padding: 20px;
+    border-radius: 30px;
+    text-align: center;
+}
+.flower>img{
+    width: 20vw;
+}
+.footer{
+    display: flex;
+    background-color: blueviolet;
+    justify-content: center;
+    color: red;
+    height: 5%;
+    align-items: center;
+    margin-top: 10px;
+}

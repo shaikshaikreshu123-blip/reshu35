@@ -1,0 +1,185 @@
+JAVA SCRIPT
+***********
+  javascript is the scripting language
+  javascript, used to develop dynamic web pages
+  javascript, used to implement forms validations
+  javascript, released by "Netscape"
+  current version is ES13
+  ES stands for ECMA SCRIPT
+  ECMA stands for "Europian computers Manufacturing Association"
+
+  Javascript used to develop both client and server side applications
+
+    client side application                                          Server side application
+    *************************                                        *************************
+    Reactjs                                                             Nodejs
+    vuejs                                                               
+    JQuery
+    Angular
+    ---
+    ---
+
+    <script></script tag is used to include the "Javascript" into "webpages"
+    Javascript supports two types of commenets
+    1) single line commenet 
+      //
+    2) multi line commenet
+       /*
+
+       */
+    
+    Javascript files extension must be ".js"
+
+    we will excute javascript in two ways
+    1) Browser
+      interpreter
+    2) Nodejs
+        node 
+    
+    either "interpreter" or "node" will execute code line by line
+    execution of code line by line called as "Synchronous Execution"
+
+    below command is used to execute Javascript with node:
+    *******************************************************
+    > node demo.js
+
+    Javascript is the "object Based Scripting" language
+
+    Browsers provided so many predefined objects, so we call Javascript is the "object Based"
+    1) document
+         used to manipulate the "html elements"
+
+         when ever html loaded into browser  engine successfully, automatically document/DOM object/documnet object 
+         model will create by Browser
+
+         DOM object internally contains tree structure/hirarichal structure called as "DOM Tree structure"
+
+         navigation inside DOM object called as "DOM Tree Traversing"
+
+         doing changes in DOM Object called as DOM "Manipulation"
+
+    2) console
+         console object,used to debug Javascript application 
+        
+    3) window
+         window object is the super object / master object
+         window object, used to work with browser properties
+         ex.
+               window width
+               window height
+               number of tabs
+               --------
+               --------
+
+    4) date
+         used to work with the Calender
+         ex. 
+            x = new date();
+            document.write(x);
+            console.log(x);
+            above snippet, used to get current date (today)
+
+    5) Time
+        used to work with timer
+
+    6) local storage
+          browser supports twwo types of storages
+            1) Local storage
+            2) session storage
+
+            local storage object,used to work with the browser local storage
+            session storage object,used to work with Browser sessionStorage
+
+    Javascript is not "Secured Scriptting Language", because we are able to see source code by using below path
+      right click --> view pagesource  
+
+
+ /* what are the difference between == and === ?
+
+                      ==                                               ===
+                    *********************************************************************************
+                    1) compares left operand                     1) compares left operand value with 
+                       value with right operand                       datatype to right operand value
+                       value                                          with datatype
+                    
+                    2) ignores datatype                           2) consider datatype
+
+                    **********************************************************************************
+ */
+
+  //BODMAS
+           //B - BRACKET
+           //O - OF
+           //D- DIVISION
+           //M - MULTIPLICATION
+           //A - ADDITION
+           //S - SUBTRACTION
+
+ variables:
+ **********
+                  variables are used to store the data
+                Ex. 
+                   string
+                   number
+                   boolean
+                   arrays
+                   objects
+                   ----
+                   ----
+
+                   we will declare variables in three ways
+                   1) var
+                   2) let
+                   3) const
+                   4) <no  keyword>
+
+                    let and const relesed in "ES6" version
+
+                    Syntax.
+                      var / let / const variable_name = value;
+                    ex.
+                       var x = "CareerIT";
+                       document.write(x);    //CareerIT
+
+                Rules for Identifier
+                ********************
+                1) identifier must have a-z, A-Z, 0-9, $ and _
+                2) identifier should not start with digits
+                Ex.
+                     var 123abc  (wrong)
+                     var _abc123  (right)
+                     var _123abc  (right)
+                     var _123$abc  (right)
+                     var _123#abc  (wrong)
+                
+                DATA TYPE:
+                   Data type representing type of data
+                   we have two types of DataTypes
+                   1) Primitive Datatypes
+                   2) Non primitive Datatypes
+                 
+                  Primitive Datatypes
+                  *****************
+                      primitive datatypes representing palin data / normal data
+                      primitive datatypes wont supports any "predefined property"
+
+
+                 Non primitive Datatypes are the objects
+                 non primitive datatypes supports predefined properties and predefined functions
+                 Ex.
+                  Arrays
+                  Objects
+                  functions
+                  classes
+                  interface
+                  ----
+                  ----ies / predefined functions" 
+
+                      Primitive datatypes divided into 
+                      1) string
+                      2) number
+                      3) boolean
+                      4) undefined
+                      5) null
+                      6) bigint
+                      7) symbol
