@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title >Variables</title>
+    </head>
+    <body>
+        
+        <script>
+            /*
+            const
+            ***********
+                 const keyword introduced in "ES6" version
+                reintialization / modifications not possible with "const" keyword
+            */
+
+            //   const  X =100;
+            //   X = 200;
+
+            const arr = [10,20,30,40,50];
+            //arr = [];
+            //arr = [1000,2000,3000,4000,5000]
+            //arr[0] = 1000;
+            //arr[1] = 2000;
+            //arr[4] = 5000;
+           // console.log(arr);
+
+           const obj  = {
+            key1 : 100
+            };
+            //obj = {} //Err
+
+            //obj = {
+            //    key1 : 1000
+            //  }
+             obj.key1 = 1000
+             console.log(obj);
+
+
+
+
+            /*
+                variables
+                  variables are used to store the data
+                Ex. 
+                   string
+                   number
+                   boolean
+                   arrays
+                   objects
+                   ----
+                   ----
+
+                   we will declare variables in three ways
+                   1) var
+                   2) let
+                   3) const
+                   4) <no  keyword>
+
+                    let and const relesed in "ES6" version
+
+                    Syntax.
+                      var / let / const variable_name = value;
+                    ex.
+                       var x = "CareerIT";
+                       document.write(x);    //CareerIT
+
+                Rules for Identifier
+                ********************
+                1) identifier must have a-z, A-Z, 0-9, $ and _
+                2) identifier should not start with digits
+                Ex.
+                     var 123abc  (wrong)
+                     var _abc123  (right)
+                     var _123abc  (right)
+                     var _123$abc  (right)
+                     var _123#abc  (wrong)
+                
+                DATA TYPE:
+                   Data type representing type of data
+                   we have two types of DataTypes
+                   1) Primitive Datatypes
+                   2) Non primitive Datatypes
+                 
+                  Primitive Datatypes
+                  *****************
+                      primitive datatypes representing palin data / normal data
+                      primitive datatypes wont supports any "predefined property"
+
+
+                 Non primitive Datatypes are the objects
+                 non primitive datatypes supports predefined properties and predefined functions
+                 Ex.
+                  Arrays
+                  Objects
+                  functions
+                  classes
+                  interface
+                  ----
+                  ----ies / predefined functions" 
+
+                      Primitive datatypes divided into 
+                      1) string
+                      2) number
+                      3) boolean
+                      4) undefined
+                      5) null
+                      6) bigint
+                      7) symbol
+
+                Number 
+                   primitive datatypes
+                   we have five types of numbers(literals)
+                     1) decimal
+                     2) double
+                     3) hexadecimal
+                         hexadecimal start with 0x (A-F)/
+                     4) octal
+                         octal starts with Oo
+                     5) binary
+                         binary start with Ob
+                       note: hexadecimal, octal and binary automatically convert to decimal
+            
+            */
+            
+            //addition
+            var num1 = 200;
+            var num2 = 300;
+            var add = num1 + num2;
+            document.write(add,"<br>");
+
+            //subtraction
+            var num1  = 20;
+            var num2 = 30;
+            var subtraction = num1 - num2;
+            document.write(subtraction,"<br>");
+
+            //Multiplication
+            var num1  = 20;
+            var num2 = 30;
+            var multi = num1 * num2;
+            document.write(multi,"<br>");
+
+            //division
+            var num1 = 200;
+            var num2 = 100;
+            var div = num1 / num2;
+            document.write(div,"<br>");
+
+            //squares of a num1
+            var num1 = 20;
+            var num2 = 30;
+            var square = num1 * num1;
+            document.write(square,"<br>")
+
+            //cube of a num2
+            var num1 = 20;
+            var num2 = 30;
+            var cube = num2 * num2 * num2;
+            document.write(cube,"<br>");
+            
+            var hexadecimal = 0x123ABC;
+            document.write(hexadecimal,"<br>");
+
+            var octal = 0o123;
+            document.write(octal,"<br>");
+
+            var binary = ob1010;
+            document.write(binary,"<br>");
+            
+
+           /*
+           String
+              collection of characters / group of characters called as string
+                we will represent string in 3 ways
+                1) ""[double quotes]
+                2) "[single quotes]
+                3) ''[backtick]
+                   ''[backtick] technically called as "template literal"
+                       template literal relesed in ES6 version
+
+                    Questions
+                      why template literal?
+                        it is used to define multi line string [paragraph] ---- ${}
+
+            Boolean
+                 we have 2 boolean values
+                 1) true means 1
+                 2) false means 0
+
+            ternary Operator
+                 condition ? block1 : block2;
+                 if condition is true,block1 will execute otherwise block2
+            
+            Undefined
+                variable declared but value not assigned called as undefined
+                undefined is primitive datatypes
+                undefined with any arthematic operations then result is NAN
+                NAN stande for Not An Number
+
+            Null
+                Null is primitive datatype
+                representing 0 or blank
+                External intillization required
+                While performing arthematic operation null automatically becomes 0
+
+            What are the difference between Undefined and Null ?
+              Undefined                                         Null
+              1) primitive Data type                            1) Primitive Data type
+              2) Variable not assigned called                   2) null as defined
+                 represents 0 or blank     
+              3) external intillization not required            3) External intillization required 
+              4) Undefine With any arthimatic opearion          4) null with any arthimetic operation automtically 
+                    then result will  NAN                            converts to 0 null
+
+            Big int:
+              used to store the large number
+              biginit suffix with "n"
+              range: 2^53-1 to -2^53-1
+              
+            Symbol
+               Symbol is the Primitive Data type
+               Symbol Data Type Used to Create Unique identifiers
+               Symbol data type used to achieve security
+               Ex: r101 = symbol("test");
+                   r102 = symbol("test");
+
+
+        
+             Variable hoisting:
+            *****
+                - Because of var key word variable declearation moved to top of scope application  with undefined called as variable hoisting
+                - Var key word initilizes with undefined 
+                - Var key word supports hoisting
+
+            */
+            /*   
+                var sub=`JS !!!`;
+                    var msg = `Welcome to ${sub}`;
+                    document.write(msg,`<br>`)
+
+                    var flag = true;
+                    var flag1 = false;
+                    flag ? document.write(`Frontend`,`<br>`):document.write(`backend`,`<br>`);
+                    !flag ? document.write(`Frontend`,`<br>`):document.write(`backend`,`<br>`);
+                    flag1 ? document.write(`Frontend`,`<br>`):document.write(`backend`,`<br>`);
+                    !flag1 ? document.write(`Frontend`,`<br>`):document.write(`backend`,`<br>`);
+                */
+
+                /*
+                var x;
+                document.write(x,`<br>`);
+                document.write(x+10,`<br>`);
+                */
+
+                /*
+                var y = null;
+                document.write(y,`<br>`);
+                document.write(y+10,`<br>`);
+                */
+
+                /*
+                var large = 123456789789456133123654793214698712587441369822n;
+                document.write(large);
+                */
+                //document.write(x);
+                //document.write(x+100);
+                //var x = 100;
+                //document.write(x);
+                //document.write(x+100);
+
+            /*
+            Non Primitive Data Types
+                Non primitive Data types are the Object Data
+                we can apply predefined properties and functions
+                Ex.
+                Arrays
+                objects
+                functions
+                interfaces
+                classes
+                ----
+                ----
+                ----
+                    
+            */
+            var arr1 = [10,20,30,40,50];
+            document.write(arr1[0],"<br>");
+            document.write(arr1[1],"<br>"); 
+                    
+            /*
+             json
+             ******
+                javascript object notation
+                javascript objects
+                json, used to transfer the data over the network
+                json is lightweight
+                objects -- {}
+                Arrays -- []
+                Data -- key & values pairs
+                        key & values  by using ":"
+                        key & values pairs seperated by using ","
+            */
+        </script>
+    </body>
+</html>
