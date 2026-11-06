@@ -1,0 +1,26 @@
+/* elementt tag selector */
+p{
+   border:1px, solid yellow;
+   display:inline-block;
+   width:20%;
+   padding:30px;
+   border-radius:40px;
+   margin:20px;
+   text-align: justify;
+   font-family: Conic sans meshpatch;
+   color: yellow;
+   box-shadow: 0px 0px 20px red;
+
+
+}
+/* class selector*/
+.c1{
+   background: linear-gradient(90deg,blue,yellow);
+}
+/* id selector */
+#id1{
+background: linear-gradient(180deg,green,red);
+}
+.c2{
+   background: linear-gradient(360deg,red,orange);
+}
