@@ -1,0 +1,10 @@
+collegetable{
+   width:50%;
+   text-align: center;
+   margin: 100px auto;
+   border:1px;
+}
+collegetable,td,th{
+   border:1px solid grey;
+   text-align: center;
+}

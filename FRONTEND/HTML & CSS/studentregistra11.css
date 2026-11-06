@@ -1,0 +1,14 @@
+fieldset{
+    width: 70%;
+    margin:30px auto;
+    border-radius: 30px;
+    color:white;
+    background: linear-gradient(180deg,blue,#ff6b81);
+}
+legend{
+    background: linear-gradient(130deg,red,blue);
+    border-radius: 3px;
+}
+input[type="text"]{
+    outline:none;
+}

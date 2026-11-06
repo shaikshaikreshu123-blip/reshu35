@@ -1,0 +1,21 @@
+
+ol{
+   background-color:darksalmon;
+   border:red;
+   width:20%;
+   display:inline-block;
+   border: 1px solid red;
+   margin:10;
+   border-radius:20px ;
+}
+li,ul{
+   background-color: red;
+   color:white;
+   padding:10px;
+   margin:10px;
+   border:2px solid red;
+   border-radius: 10px;
+}
+li.hover{
+   background-color: chocolate;
+}

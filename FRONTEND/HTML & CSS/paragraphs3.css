@@ -1,0 +1,35 @@
+p{
+   border:1px, solid yellow;
+   display:inline-block;
+   width:20%;
+   padding:20px;
+   border-radius:30px;
+   margin:10px;
+   text-align: justify;
+   font-family: Conic sans meshpatch;
+   color: white;
+}
+.c1{
+   background: linear-gradient(90deg,red,black,green);
+}
+#id1{
+   background: linear-gradient(90deg,red,black,green);
+}
+.c2{
+   background: linear-gradient(90deg,red,black,green);
+}
+.c3{
+   background: linear-gradient(90deg,red,black,green);
+}
+.c4{
+   background: linear-gradient(90deg,red,black,green);
+}
+.c5{
+   background: linear-gradient(90deg,red,black,green);
+}
+.c6{
+   background: linear-gradient(90deg,red,black,green);
+}
+.c7{
+   background: linear-gradient(90deg,red,black,green);
+}
