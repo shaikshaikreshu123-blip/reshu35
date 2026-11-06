@@ -1,0 +1,9 @@
+audio,video{
+   border :5px solid blue;
+   padding: 30px;
+   border-radius: 30px;
+   margin: 30px;
+   width:40%;
+   height:200px;
+   display: block;/* inline -block */
+}
