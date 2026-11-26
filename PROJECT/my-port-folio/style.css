@@ -1,0 +1,184 @@
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background: #0b0b16;
+    color: white;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 8%;
+    background: #11111f;
+}
+
+.logo {
+    color: #a78bfa;
+    font-size: 26px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #a78bfa;
+}
+
+/* Home Section */
+.home {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    padding: 50px 10%;
+}
+
+.home-content h3 {
+    font-size: 24px;
+    color: #c4b5fd;
+}
+
+.home-content h1 {
+    font-size: 65px;
+    margin: 15px 0;
+    color: #a78bfa;
+}
+
+.home-content h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.home-content p {
+    max-width: 550px;
+    line-height: 1.8;
+    color: #c4c4d0;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 13px 28px;
+    background: #8b5cf6;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #6d28d9;
+    transform: translateY(-3px);
+}
+
+/* Common Section Style */
+section:not(.home) {
+    padding: 70px 10%;
+}
+
+section h2 {
+    font-size: 32px;
+    color: #a78bfa;
+    margin-bottom: 25px;
+}
+
+/* About */
+.about p {
+    max-width: 750px;
+    line-height: 1.8;
+    color: #ccccd8;
+}
+
+/* Skills */
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skill-list span {
+    background: #1c1b30;
+    padding: 15px 25px;
+    border: 1px solid #8b5cf6;
+    border-radius: 8px;
+}
+
+/* Project */
+.project-card {
+    background: #171729;
+    padding: 25px;
+    border-radius: 10px;
+    max-width: 500px;
+    border: 1px solid #373052;
+}
+
+.project-card h3 {
+    color: #c4b5fd;
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    color: #ccccd8;
+    line-height: 1.7;
+}
+
+/* Contact */
+.contact p {
+    margin: 12px 0;
+    color: #ccccd8;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #11111f;
+    color: #aaa;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .home-content h1 {
+        font-size: 45px;
+    }
+
+    .home-content h2 {
+        font-size: 22px;
+    }
+
+    .home {
+        padding: 50px 7%;
+    }
+}
