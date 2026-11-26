@@ -1,50 +1,32 @@
-public class Operators{
+package com.careerit;
 
-     public static void main(String[] args){
-	 int j=310;
-	 int r=355;
-	 
-	  //Arithmetic Operators
-	    System.out.println(j+r);
-		System.out.println(j-r);
-		System.out.println(j*r);
-		System.out.println(j/r);
-		System.out.println(j%r);
-		
-		//Assignment Operators
-	    System.out.println(j=r);
-		System.out.println(j+=r);
-		System.out.println(j-=r);
-		System.out.println(j*=r);
-		System.out.println(j/=r);
-	    System.out.println(j%=r);
-		
-		//Relational Operator
-		System.out.println(j==r);
-		System.out.println(j!=r);
-		System.out.println(j>r);
-		System.out.println(j<r);
-		System.out.println(j>=r);
-	    System.out.println(j<=r);
-		
-         		
-		//Unary operators
-		System.out.println(i);
-		System.out.println(i++);
-		System.out.println(++i);
-		System.out.println(i);
-		
-		//System.out.println(i);
-		//System.out.println(i--);
-		//System.out.println(--i);
-	//	System.out.println(i);
-		
-		//Conditional Operator
-		//System.out.println(i<j && i!j);
-		
-		
-		  
-		  
-		  
-	} 
+public class Operators {
+    public static void main(String[] args) {
+        int i =10;
+        int j =31;
+       /* System.out.println(i);
+        System.out.println(j);
+        System.out.println(i-j);
+        System.out.println(i+j);
+        System.out.println(i*j);
+        System.out.println(i/j);
+        System.out.println(i%j);*/
+//INCREMENT AND DECREMENT
+        System.out.println(i);
+        System.out.println(++i);
+        System.out.println(i--);
+        System.out.println(i++);
+        System.out.println(i--);
+        System.out.println(i);
+//Relational Operators
+        System.out.println(j=j);
+        System.out.println(i!=j);
+        System.out.println(i<j);
+        System.out.println(i>j);
+        System.out.println(i<=j);
+        System.out.println(i>=j);
+        //CONditional operators
+        System.out.println(i<j&&i==j);
+
+    }
 }
